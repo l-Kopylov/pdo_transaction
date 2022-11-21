@@ -1,0 +1,72 @@
+* {box-sizing: border-box}
+
+.container {
+padding: 1px 5px; 
+width: 30%;
+margin: auto;
+border: 2px solid  #f1f1f1;
+;
+}
+/* Full-width input fields */
+input[type=text], input[type=number],  input[type=password] ,textarea {
+  width: 100%;
+  padding: 7px;
+  margin: 5px 0px 5px 0px;
+  display: block;
+  border: 0.5px solid  #a8a4a4;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=number], input[type=password],textarea:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 2px solid #f1f1f1;
+  width: 100%;
+}
+
+/* Set a style for the submit/login button */
+.submitbtn , .loginbtn {
+  margin: 8px 0;
+  width: 100%;
+  padding: 10px;
+  font-size: 15px;
+  color: white;
+  background: #5F9EA0;
+  border: none;
+  border-radius: 5px;
+}
+
+.submitbtn:hover {
+  opacity:1;
+}
+
+/* Add a blue text color to links */
+ a {
+  color: dodgerblue;
+}
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+} 
+table{
+  width: 50%;
+  margin: 30px auto;
+  border-collapse: collapse;
+  text-align: left;
+}
+tr {
+  border-bottom: 1px solid #cbcbcb;
+}
+th, td{
+  border: none;
+  height: 30px;
+  padding: 2px;
+}
+tr:hover {
+  background: #F5F5F5;
+}
