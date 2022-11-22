@@ -9,12 +9,17 @@ include('configuration/dbconfig.php');
   $amount           = $_POST['amount'];
   $comment          = $_POST['comment'];
 
+  $stmtinsert = $dbconnection->conn->beginTransaction();
   $sql = "INSERT INTO transaction (name , email , mobile , address , amount , comment) VALUES (?,?,?,?,?,?)";
   $stmtinsert = $dbconnection->conn->prepare($sql);
   $result = $stmtinsert->execute([$name , $email , $mobile , $address , $amount , $comment]);
+  $stmtinsert = $dbconnection->conn->commit();
+  print_r($stmtinsert);
   if($result){
-    echo "Successfully saved in the db";
+      header("Location:index.php");
+
   } else{
+      $stmtinsert->rollBack();
     echo "error while saving it in the db";
   }
  }
