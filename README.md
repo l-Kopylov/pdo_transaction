@@ -1,1 +1,1 @@
-# pdo_transaction php crud on transaction
+# pdo_transaction php crud Скромное тренеровочное приложение 
